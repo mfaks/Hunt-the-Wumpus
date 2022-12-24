@@ -35,9 +35,9 @@ The player wins the game if they can safely guide the adventurer through the cav
 The Adventurer  
 Each turn you may take one of two actions to guide the adventurer:  
 
-&nbsp;&nbsp;&nbsp;&nbsp;• Move: You can move through a tunnel to an adjacent room.  
+• Move: You can move through a tunnel to an adjacent room.  
 
-&nbsp;&nbsp;&nbsp;&nbsp;• Fire an Arrow: The adventurer begins the game with three arrows. As long as the adventurer still has at least one arrow, the player can choose to fire one in any direction (i.e. north, south, east, or west). The arrow continues flying in the same direction until it hits a wall or travels through three rooms. If the arrow enters the Wumpus’ room, it pierces the Wumpus’ heart and kills the monster.  
+• Fire an Arrow: The adventurer begins the game with three arrows. As long as the adventurer still has at least one arrow, the player can choose to fire one in any direction (i.e. north, south, east, or west). The arrow continues flying in the same direction until it hits a wall or travels through three rooms. If the arrow enters the Wumpus’ room, it pierces the Wumpus’ heart and kills the monster.  
 
 The Wumpus
 Usually, the Wumpus is peacefully asleep in its cave. Two things wake the Wumpus up, however: the adventurer entering its room or shooting an arrow and missing it. If the Wumpus wakes up while in the same room as the adventurer, the Wumpus will angrily eat the adventurer, ending the game. If the Wumpus just wakes up from hearing an arrow being fired, though, there’s a 75% chance it will move to a random empty room in the cave to avoid being found.  
