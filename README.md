@@ -16,7 +16,7 @@ The player wins the game if they can safely guide the adventurer through the cav
 
 • Practice good software engineering design principles:  
 
-&nbsp;&nbsp;&nbsp;&nbsp;o Design your solution before writing the program  
+&nbsp;&nbsp;&nbsp;&nbsp;o Design the solution before writing the program  
 
 &nbsp;&nbsp;&nbsp;&nbsp;o Develop test cases before writing the program  
 
@@ -33,9 +33,9 @@ The player wins the game if they can safely guide the adventurer through the cav
 **GAME ELEMENTS:**
 
 The Adventurer  
-Each turn you may take one of two actions to guide the adventurer:  
+Each turn may take one of two actions to guide the adventurer:  
 
-• Move: You can move through a tunnel to an adjacent room.  
+• Move: Move through a tunnel to an adjacent room.  
 
 • Fire an Arrow: The adventurer begins the game with three arrows. As long as the adventurer still has at least one arrow, the player can choose to fire one in any direction (i.e. north, south, east, or west). The arrow continues flying in the same direction until it hits a wall or travels through three rooms. If the arrow enters the Wumpus’ room, it pierces the Wumpus’ heart and kills the monster.  
 
@@ -68,28 +68,28 @@ Notice that there’s no percept for the escape rope! That means the player will
 "You smell a terrible stench."
 "You see a glimmer nearby."
 
-Remember, the percepts don’t tell you where the hazard or gold is, just that it’s somewhere close!  
+Remember, the percepts don’t identify where the hazard or gold is, just that it’s somewhere close!  
 
 **PROGRAM REQUIREMENTS:**  
 
-• Your program should allow the user to play Hunt the Wumpus, as described above.  
+• The program should allow the user to play Hunt the Wumpus, as described above.  
 
-• The Wumpus' cave is represented by a square grid. The size of the grid (i.e. the number of rooms on one side of the square) should be specified as an initial input to your program. Caves smaller than 4 rooms on a side aren't allowed. You should visualize the grid to allow the user to play the game. In particular, you should display the grid, and indicate within the grid which room the player is in.
+• The Wumpus' cave is represented by a square grid. The size of the grid (i.e. the number of rooms on one side of the square) should be specified as an initial input to the program. Caves smaller than 4 rooms on a side aren't allowed. Visualize the grid to allow the user to play the game. In particular, display the grid, and indicate within the grid which room the player is in.
 
-• Your program must also accept a second input which will be either "true" or "false". If the input is false, then the program will run as normal. If the second input is specified as "true" then your game must operate in debug mode.  
+• The program must also accept a second input which will be either "true" or "false". If the input is false, then the program will run as normal. If the second input is specified as "true" then the game must operate in debug mode.  
 
-• When your program in operating in debug mode, the player's map will show a "cheat view" with locations marked for each of the following: wumpus, bats, bottomless pits, gold, player, escape rope.  
+• When the program in operating in debug mode, the player's map will show a "cheat view" with locations marked for each of the following: wumpus, bats, bottomless pits, gold, player, escape rope.  
 
 • To navigate the cave system, the player must be able to type "w" (north), "a" (west), "s" (south), or "d" (east). In order to fire an arrow, a space (" ") should be used, followed by either "w", "a", "s", or "d" to indicate the direction. For example, the user would enter "d" to fire an arrow towards the east.  
 
-• Your code must have the following classes: Room, Event, Wumpus, Bats, Pit, and Gold. You may create more classes if they would be helpful.  
+• The code must have the following classes: Room, Event, Wumpus, Bats, Pit, and Gold. Create more classes if they would be helpful.  
 
-• The Event class must be abstract (i.e. it must contain purely virtual functions), and the Wumpus, Bats, Pit, and Gold classes should all be derived from Event. Remember, any event does something when the adventurer enters the same room as the event, and will display a message when the adventurer is nearby. Your design of the Event class should reflect this. For example, your Event class might have a percept() function that is called whenever the adventurer is in a room adjacent to the event, where the Wumpus, Bats, Pit, and Gold classes implement their own specific versions of the percept() function. Similarly, your Event class might have an encounter() function that is called when the adventurer enters the same room as the event, with the individual event classes implementing their own specific versions of encounter().  
+• The Event class must be abstract (i.e. it must contain purely virtual functions), and the Wumpus, Bats, Pit, and Gold classes should all be derived from Event. Remember, any event does something when the adventurer enters the same room as the event, and will display a message when the adventurer is nearby. The design of the Event class should reflect this. For example, the Event class might have a percept() function that is called whenever the adventurer is in a room adjacent to the event, where the Wumpus, Bats, Pit, and Gold classes implement their own specific versions of the percept() function. Similarly, the Event class might have an encounter() function that is called when the adventurer enters the same room as the event, with the individual event classes implementing their own specific versions of encounter().  
 
-• You must use the Event classes polymorphically. In other words, your Room class may only contain a member of the Event class but not members of the Wumpus, Bats, Pit, or Gold classes.  
+• Use the Event classes polymorphically. In other words, the Room class may only contain a member of the Event class but not members of the Wumpus, Bats, Pit, or Gold classes.  
 
-• Each Room contains at most one Event, but it's possible that it contains no Event. The design of your Room class should reflect this.  
+• Each Room contains at most one Event, but it's possible that it contains no Event. The design of the Room class should reflect this.  
 
-• The grid representing your cave should be implemented using the std::vector class.    
+• The grid representing the cave should be implemented using the std::vector class.    
 
-• Your program must be factored into interface, implementation, and application. Specifically, you should have one header file and one implementation file for each class, and you should have a single application file containing your main() function. You should also include a Makefile that specifies compilation for your program.  
+• The program must be factored into interface, implementation, and application. Specifically, include one header file and one implementation file for each class, and  a single application file containing the main() function. Include a Makefile that specifies compilation for the program.  
