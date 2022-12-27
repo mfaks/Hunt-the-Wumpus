@@ -11,9 +11,6 @@
 
 #include <iostream>
 #include <string>
-#include <cstdlib>
-#include <ctime>
-#include <vector>
 #include "event.h"
 
 using namespace std;
