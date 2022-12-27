@@ -1,9 +1,9 @@
 /******************************************************
 ** Program: game.cpp
 ** Author: Muhammad Faks
-** Description: Implementation file for game class
-** Input: Cave dimensions, direction to move, direction to fire an arrow, restart game with the same settings, brand new position
-** Output: Instructions, rooms, precepts, encounters, number of arrows, status of arrows after firing
+** Description: Implementation file for game class containing variable initializations and function prototpyes
+** Input: Grid size, direction to move, direction to fire an arrow, prompt to continue playing the same game after death
+** Output: Instructions, dynamically updating game grid, precepts, encounters, outcomes for moving, outcomes for firing an arrow
 ******************************************************/
 
 #include <iostream>
