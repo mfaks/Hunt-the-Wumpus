@@ -28,5 +28,4 @@ class Bats : public Event { //inhereted from event class
 		char event_letter(); //designates event letter 
 };
 
-
 #endif
