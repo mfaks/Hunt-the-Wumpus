@@ -1,3 +1,11 @@
+/******************************************************
+** Program: game.h
+** Author: Muhammad Faks
+** Description: Header file containing all of the function and variable declarations for the game class
+** Input: Grid size, direction to move, direction to fire an arrow, prompt to continue playing the same game after death
+** Output: Instructions, dynamically updating game grid, precepts, encounters, outcomes for moving, outcomes for firing an arrow
+******************************************************/
+
 #ifndef GAME_H
 #define GAME_H
 
