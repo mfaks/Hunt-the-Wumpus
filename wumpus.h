@@ -17,7 +17,7 @@
 
 using namespace std;
 
-class Wumpus : public Event { //inhereted from event class
+class Wumpus : public Event {
 	protected:
 	
 	public:
