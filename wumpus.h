@@ -1,7 +1,6 @@
 /******************************************************
 ** Program: wumpus.h
 ** Author: Muhammad Faks
-** Date: 11/19/2022
 ** Description: Inhereted polymorphically from event class
 ** Input: n/a
 ** Output: Uses polymorphism to output the wumpus precept and enounter message
