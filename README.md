@@ -12,24 +12,6 @@ If the adventurer perishes while searching for the Wumpus, the player should be 
 
 The player wins the game if they can safely guide the adventurer through the cave to kill the Wumpus, pick up the gold, and make it back to the escape rope unharmed!
 
-**GOALS:**
-
-• Practice good software engineering design principles:  
-
-&nbsp;&nbsp;&nbsp;&nbsp;o Design the solution before writing the program  
-
-&nbsp;&nbsp;&nbsp;&nbsp;o Develop test cases before writing the program  
-
-• Practice Object-Oriented Programming  
-
-• Implement “Is-a” relationship using Inheritance  
-
-• Implement polymorphism and practice STL template by using vector  
-
-• Practice file separation and create Makefile  
-
-• Use functions to modularize code to increase readability and reduce repeated code  
-
 **GAME ELEMENTS:**
 
 The Adventurer  
