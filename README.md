@@ -62,11 +62,11 @@ Remember, the percepts don’t identify where the hazard or gold is, just that i
 
 • When the program in operating in debug mode, the player's map will show a "cheat view" with locations marked for each of the following: wumpus, bats, bottomless pits, gold, player, escape rope.  
 
-• To navigate the cave system, the player must be able to type "w" (north), "a" (west), "s" (south), or "d" (east). In order to fire an arrow, a space (" ") should be used, followed by either "w", "a", "s", or "d" to indicate the direction. For example, the user would enter "d" to fire an arrow towards the east.  
+• To navigate the cave system, the player must be able to type "w" (north), "a" (west), "s" (south), or "d" (east). In order to fire an arrow, a specified input will be collected, followed by either "w", "a", "s", or "d" to indicate the direction. For example, the user would enter "d" to fire an arrow towards the east.  
 
-• The code must have the following classes: Room, Event, Wumpus, Bats, Pit, and Gold. Create more classes if they would be helpful.  
+• The code must have at least the following classes: Room, Event, Wumpus, Bats, Pit, and Gold.  
 
-• The Event class must be abstract (i.e. it must contain purely virtual functions), and the Wumpus, Bats, Pit, and Gold classes should all be derived from Event. Remember, any event does something when the adventurer enters the same room as the event, and will display a message when the adventurer is nearby. The design of the Event class should reflect this. For example, the Event class might have a percept() function that is called whenever the adventurer is in a room adjacent to the event, where the Wumpus, Bats, Pit, and Gold classes implement their own specific versions of the percept() function. Similarly, the Event class might have an encounter() function that is called when the adventurer enters the same room as the event, with the individual event classes implementing their own specific versions of encounter().  
+• The Event class must be abstract , and the Wumpus, Bats, Pit, and Gold classes should all be derived from Event. Remember, any event does something when the adventurer enters the same room as the event, and will display a message when the adventurer is nearby. The design of the Event class should reflect this. For example, the Event class might have a percept() function that is called whenever the adventurer is in a room adjacent to the event, where the Wumpus, Bats, Pit, and Gold classes implement their own specific versions of the percept() function. Similarly, the Event class might have an encounter() function that is called when the adventurer enters the same room as the event, with the individual event classes implementing their own specific versions of encounter().  
 
 • Use the Event classes polymorphically. In other words, the Room class may only contain a member of the Event class but not members of the Wumpus, Bats, Pit, or Gold classes.  
 
@@ -74,4 +74,6 @@ Remember, the percepts don’t identify where the hazard or gold is, just that i
 
 • The grid representing the cave should be implemented using the std::vector class.    
 
-• The program must be factored into interface, implementation, and application. Specifically, include one header file and one implementation file for each class, and  a single application file containing the main() function. Include a Makefile that specifies compilation for the program.  
+• The program will be compiled with a Makefile.
+
+• Include one header file and one implementation file for each class, and a single driver file containing the main() function.  
